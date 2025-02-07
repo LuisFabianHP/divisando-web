@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condiciones del Servicio - Divisando</title>
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
             background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
         .header {
             background-color: #0073e6;
@@ -29,17 +30,86 @@
             margin: auto;
             background: white;
             padding: 20px;
+            margin-top: 7em;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .contact {
             margin-top: 20px;
-            padding-top: 10px;
+            padding-top: 60px;
             border-top: 1px solid #ddd;
         }
 
-        .contact p {
-            text-align: left;
+        .header-container {
+          background-color: #0073e6;
+          color: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          z-index: 1000;
+        }
+        .menu {  
+            margin-right: 20px;
+            background-color: #333; 
+        }
+        .menu ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: space-around;
+        }
+        
+        .menu ul li {
+          display: inline;
+        }
+        
+        .menu ul li a {
+          color: white;
+          text-decoration: none;
+          padding: 15px 20px;
+          display: block;
+        }
+        
+        .menu ul li a:hover {
+          background-color: #111;
+        }
+        
+        .footer {
+          background-color: #f1f1f1;
+          padding: 20px;
+          text-align: center;
+          position: fixed;
+          width: 100%;
+          bottom: 0;
+          z-index: 1000;
+        }
+        
+        .footer-menu ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+        }
+        
+        .footer-menu ul li {
+          margin: 0 10px;
+        }
+        
+        .footer-menu ul li a {
+          color: #666;
+          text-decoration: none;
+          padding: 5px 10px;
+          display: inline-block;
+        }
+        
+        .footer-menu ul li a:hover {
+          color: #333;
         }
     </style>
 </head>
