@@ -78,20 +78,53 @@
         .menu ul li a:hover {
           background-color: #111;
         }
+        
+        .footer {
+          background-color: #f1f1f1;
+          padding: 20px;
+          text-align: center;
+          position: fixed;
+          width: 100%;
+          bottom: 0;
+          z-index: 1000;
+        }
+        
+        .footer-menu ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+        }
+        
+        .footer-menu ul li {
+          margin: 0 10px;
+        }
+        
+        .footer-menu ul li a {
+          color: #666;
+          text-decoration: none;
+          padding: 5px 10px;
+          display: inline-block;
+        }
+        
+        .footer-menu ul li a:hover {
+          color: #333;
+        }
     </style>
 </head>
 <body>
     <header>
       <div class="header-container">
         <h1>Divisando</h1>
-        <nav class="menu">
+        <!--<nav class="menu">
           <ul>
             <li><a href="#inicio">Inicio</a></li>
             <li><a href="#privacidad">Políticas de Privacidad</a></li>
             <li><a href="#condiciones">Condiciones y Servicios</a></li>
             <li><a href="#instrucciones-facebook">Instrucciones para Facebook</a></li>
           </ul>
-        </nav>
+        </nav>-->
       </div>   
     </header>
     <div class="container">
@@ -101,5 +134,15 @@
             <p><strong>Contacto:</strong> soporte@divisando.com</p>
         </div>
     </div>
+    <footer class="footer">
+      <nav class="footer-menu">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#privacidad">Políticas de Privacidad</a></li>
+          <li><a href="#condiciones">Condiciones y Servicios</a></li>
+          <li><a href="#instrucciones-facebook">Instrucciones para Facebook</a></li>
+        </ul>
+      </nav>
+    </footer>
 </body>
 </html>
