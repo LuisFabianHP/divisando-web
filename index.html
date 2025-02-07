@@ -30,6 +30,7 @@
             margin: auto;
             background: white;
             padding: 20px;
+            padding-top: 70px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
@@ -39,50 +40,56 @@
             border-top: 1px solid #ddd;
         }
 
+        .header-container {
+          background-color: #333;
+          color: white;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 20px;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          z-index: 1000;
+        }
         
-          .menu {
-            background-color: #333;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-          }
+        .menu ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          justify-content: space-around;
+        }
         
-          .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-          }
+        .menu ul li {
+          display: inline;
+        }
         
-          .menu ul li {
-            display: inline;
-          }
+        .menu ul li a {
+          color: white;
+          text-decoration: none;
+          padding: 15px 20px;
+          display: block;
+        }
         
-          .menu ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            display: block;
-          }
-        
-          .menu ul li a:hover {
-            background-color: #111;
-          }
+        .menu ul li a:hover {
+          background-color: #111;
+        }
     </style>
 </head>
 <body>
     <header class="header">
+      <div class="header-container">
         <h1>Divisando</h1>
         <nav class="menu">
-            <ul>
-              <li><a href="#inicio">Inicio</a></li>
-              <li><a href="#privacidad">Políticas de Privacidad</a></li>
-              <li><a href="#condiciones">Condiciones y Servicios</a></li>
-              <li><a href="#instrucciones-facebook">Instrucciones para Facebook</a></li>
-            </ul>
-        </nav>    
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#privacidad">Políticas de Privacidad</a></li>
+            <li><a href="#condiciones">Condiciones y Servicios</a></li>
+            <li><a href="#instrucciones-facebook">Instrucciones para Facebook</a></li>
+          </ul>
+        </nav>
+      </div>   
     </header>
     <div class="container">
         <p>Divisando es una aplicación que te permite consultar tasas de cambio de diferentes monedas de manera rápida y sencilla.</p>
